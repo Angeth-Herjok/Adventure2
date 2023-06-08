@@ -1,0 +1,144 @@
+
+
+
+
+
+.container{
+    position: absolute;
+    left: 0;
+    top: 18;
+    width: 100%;
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover; 
+    
+  }
+  .outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .details{
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    transform: translate(-50% -50%);
+    text-align: center;
+  }
+  .details h1{
+    font-size: 3em;
+    color: #e6ebe2; 
+  }
+  .details h4{
+    color: #e6ebe2;
+  }
+  .details h3{
+    color: #e6ebe2;
+  }
+  .span1{
+    color: rgb(110, 12, 21);
+    font-size: 250%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+@keyframes animate{
+    0%,200%{
+      background-image: url("avent1.jpeg");
+    }
+    25%{
+      background-image: url("avent2.jpeg");
+    }
+    50%{
+      background-image: url("avent10.jpeg");
+    }
+    75%{
+      background-image: url("avent4.jpeg");
+    }
+    100%{
+      background-image: url("avent3.jpeg");
+    }
+    125%{
+        background-image: url("avent8.jpeg");
+    }
+    150%{
+        background-image: url("avent9.jpeg");
+    }
+    175%{
+        background-image: url("avent6.jpeg");
+    }
+    200%{
+        background-image: url("avent7.jpeg");
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: 0;
+    border: 0;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.2s 11 none;
+} 
+
+
+body{
+    background: #e6ebe2;
+}
+.container1{
+    width: 90px;
+    margin: 0px auto;
+}
+.container1 .heading{
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.container1 .avent-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));  
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.container1 .avent-container .avent{
+    text-align: center;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); 
+    outline: 0.1rem solid #ccc; 
+    outline-offset: -0.7rem;
+    cursor: pointer;
+}
+.container1 .avent-container .avent:hover{
+    outline-offset: 0;
+
+}
+.container1 .avent-container .avent img{
+    width: 100%;
+}
+.container1 .avent-container .avent img:hover{
+    transform: scale(0.9);
+
+}
+.container2{
+    display: flex;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .avent-container {
+    flex: 1 0 50%;
+    max-width: 50%;
+    margin-right: 10px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
